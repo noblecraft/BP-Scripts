@@ -18,7 +18,7 @@ CAPI_DIR=$WORKING_DIR/CAPI
 
 git clone git@github.com:BetterPlaceAustralia/CAPI.git $CAPI_DIR
 cd $CAPI_DIR
-#npm install
+npm install
 export NODE_ENV=systest
 cd -
 
@@ -26,7 +26,7 @@ SAPI_DIR=$WORKING_DIR/SAPI
 
 git clone git@github.com:BetterPlaceAustralia/SAPI.git $SAPI_DIR
 cd $SAPI_DIR
-#sbt "project knightsbridge-sapi-web" assembly
+sbt "project knightsbridge-sapi-web" assembly
 
 echo "Bootstrap complete, working dir: [$WORKING_DIR]"
 
